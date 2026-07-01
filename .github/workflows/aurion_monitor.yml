@@ -1,9 +1,12 @@
 name: AURION Monitor 24/7
 
 on:
+  push:
+    paths:
+      - 'data/user_config.json' # Dispara el monitor automáticamente al actualizar preferencias
   schedule:
-    - cron: '0 * * * *' # Ejecución cada hora
-  workflow_dispatch:    # Ejecución manual
+    - cron: '0 * * * *'        # Ejecución programada cada hora
+  workflow_dispatch:           # Ejecución manual desde la interfaz de GitHub
 
 permissions:
   contents: write # Necesario para guardar la memoria (historial) en el repo
