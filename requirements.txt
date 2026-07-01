@@ -6,7 +6,6 @@ langchain==0.3.0
 langchain-openai==0.2.0
 
 # Herramientas de comunicación
-# Se ha añadido telethon para la integración de Telegram
 telethon
 
 # Monitorización y scraping
@@ -15,3 +14,6 @@ beautifulsoup4==4.12.3
 
 # Gestión de datos/memoria
 pandas==2.2.0
+
+# Automatización de Git (NUEVA)
+gitpython
