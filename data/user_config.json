@@ -12,12 +12,14 @@
             "Bruno Mars",
             "Robbie Williams"
         ],
-        "precio_maximo": 444,
+        "precio_maximo": 500,
         "intereses": [
-            "cine"
+            "cine",
+            "tecnolog\u00eda",
+            "rock"
         ],
         "fecha_inicio": "2026-06-30",
-        "fecha_fin": "2026-10-30",
+        "fecha_fin": "2026-12-30",
         "pais": "Espa\u00f1a",
         "provincia": "Todas"
     }
