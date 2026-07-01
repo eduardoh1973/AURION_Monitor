@@ -2,8 +2,11 @@ name: AURION Monitor 24/7
 
 on:
   schedule:
-    - cron: '0 * * * *' # Se ejecuta automáticamente al inicio de cada hora
-  workflow_dispatch:    # Permite lanzarlo manualmente cuando quieras desde la pestaña Actions en GitHub
+    - cron: '0 * * * *' # Ejecución cada hora
+  workflow_dispatch:    # Ejecución manual
+
+permissions:
+  contents: write # Necesario para guardar la memoria (historial) en el repo
 
 jobs:
   run-monitor:
@@ -18,7 +21,9 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run AURION Monitor
         env:
@@ -28,3 +33,10 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
+
+      - name: Commit and push changes to memory
+        run: |
+          git config --global user.name 'AURION Bot'
+          git config --global user.email 'bot@aurion.monitor'
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualizar memoria del agente: $(date)" && git push)
