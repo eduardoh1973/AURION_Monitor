@@ -55,12 +55,10 @@ def monitorizar():
             logging.info(f"Evento descartado: {evento.get('nombre', 'Desconocido')}")
 
 if __name__ == "__main__":
-    logging.info("Iniciando AURION Monitor...")
-    while True:
-        try:
-            monitorizar()
-        except Exception as e:
-            logging.error(f"Error en el ciclo de monitorización: {e}")
-        
-        logging.info("Esperando al siguiente ciclo (60 segundos)...")
-        time.sleep(60)
+    # Ya no usamos el 'while True' porque GitHub Actions 
+    # dispara este script cada vez que se cumple la hora.
+    try:
+        monitorizar()
+    except Exception as e:
+        logging.error(f"Error fatal: {e}")
+        exit(1) # Esto avisa a GitHub que algo salió mal
