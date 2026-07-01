@@ -1,0 +1,24 @@
+{
+    "preferencias": {
+        "deportes": [
+            "baloncesto",
+            "tenis",
+            "f\u00fatbol",
+            "f\u00f3rmula 1"
+        ],
+        "artistas": [
+            "Coldplay",
+            "Metallica",
+            "Bruno Mars",
+            "Robbie Williams"
+        ],
+        "precio_maximo": 444,
+        "intereses": [
+            "cine"
+        ],
+        "fecha_inicio": "2026-06-30",
+        "fecha_fin": "2026-10-30",
+        "pais": "Espa\u00f1a",
+        "provincia": "Todas"
+    }
+}

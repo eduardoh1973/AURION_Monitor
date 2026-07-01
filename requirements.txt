@@ -1,0 +1,18 @@
+# Gestión de entorno y configuración
+python-dotenv==1.0.1
+
+# Lógica del Agente (LangChain para el ciclo ReAct)
+langchain==0.3.0
+langchain-openai==0.2.0
+
+# Herramientas de comunicación
+python-telegram-bot==21.3
+# Para el envío de correos usaremos librerías estándar (smtplib), 
+# pero si necesitas algo más avanzado, podrías añadir 'yagmail'
+
+# Monitorización y scraping (puedes ajustar según tus fuentes)
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# Gestión de datos/memoria
+pandas==2.2.0
