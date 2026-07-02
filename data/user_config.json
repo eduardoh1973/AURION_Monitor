@@ -1,10 +1,7 @@
 {
     "preferencias": {
         "deportes": [
-            "baloncesto",
-            "tenis",
-            "f\u00fatbol",
-            "f\u00f3rmula 1"
+            "f\u00fatbol"
         ],
         "artistas": [
             "Coldplay",
@@ -12,15 +9,13 @@
             "Bruno Mars",
             "Robbie Williams"
         ],
-        "precio_maximo": 500,
+        "precio_maximo": 112,
         "intereses": [
-            "cine",
-            "tecnolog\u00eda",
-            "rock"
+            "cine"
         ],
         "fecha_inicio": "2026-06-30",
         "fecha_fin": "2026-12-30",
-        "pais": "Alemania",
+        "pais": "Espa\u00f1a",
         "provincia": "Todas"
     }
 }
