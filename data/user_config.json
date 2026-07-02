@@ -1,7 +1,8 @@
 {
     "preferencias": {
         "deportes": [
-            "f\u00fatbol"
+            "f\u00fatbol",
+            "baloncesto"
         ],
         "artistas": [
             "Coldplay",
@@ -9,7 +10,7 @@
             "Bruno Mars",
             "Robbie Williams"
         ],
-        "precio_maximo": 112,
+        "precio_maximo": 324,
         "intereses": [
             "cine"
         ],
